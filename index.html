@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>2021/22 European Standings API</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<h1>2021-22 EUROPEAN FOOTBALL LEAGUE STANDINGS</h1>
+		<!-- drop down menu for leagues  -->
+		<section class = 'leagueSelect'>
+			<label for="leagues">Choose a League:</label>
+			<select name="leaguesEurope" id="leagues">
+    			<option value="premierLeague">Premier League</option>
+  				<option value="laLiga">La Liga</option> 
+				<option value="serieA">Serie A</option>
+				<option value="bundesliga">Bundesliga</option>
+				<option value="ligueUn">Ligue 1</option>
+				<option value="eredivisie">Eredivisie</option>
+			</select>
+			<button type="button" name="button">Enter</button>
+		</section>
+<!-- Standings Table  -->
+		<section class = 'mainSec'>
+				<section class = 'container'>
+					<ul class="standingsTable">
+						<h2>Teams Standing</h2>
+						<li class="table-header">
+							  <div class="col col-1">Position</div>
+							  <div class="col col-2">Team Name</div>
+							  <div class="col col-3">Games Played</div>
+							  <div class="col col-4">Games Won</div>
+							  <div class="col col-5">Games Drew</div>
+							  <div class="col col-6">Games Lost</div>
+							  <div class="col col-7">Goals For</div>
+							  <div class="col col-8">Goals Against</div>
+							  <div class="col col-9">Points</div>
+							</li>
+							<!-- 1st Position  -->
+							<li class="table-row">
+							  <div class="col col-1 rank1Position" data-label="Position"></div>
+							  <div class="col col-2 rank1Name" data-label="Team Name"></div>
+							  <div class="col col-3 rank1Played" data-label="Games Played"></div>
+							  <div class="col col-4 rank1Won" data-label="Games Won"></div>
+							  <div class="col col-5 rank1Drew" data-label="Games Drew"></div>
+							  <div class="col col-6 rank1Lost" data-label="Games Lost"></div>
+							  <div class="col col-7 rank1For" data-label="Goals For"></div>
+							  <div class="col col-8 rank1Against" data-label="Goals Against"></div>
+							  <div class="col col-9 rank1Points" data-label="Points"></div>
+							</li>
+							<!-- 2nd Position  -->
+							<li class="table-row">
+								<div class="col col-1 rank2Position" data-label="Position"></div>
+								<div class="col col-2 rank2Name" data-label="Team Name"></div>
+								<div class="col col-3 rank2Played" data-label="Games Played"></div>
+								<div class="col col-4 rank2Won" data-label="Games Won"></div>
+								<div class="col col-5 rank2Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank2Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank2For" data-label="Goals For"></div>
+								<div class="col col-8 rank2Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank2Points" data-label="Points"></div>
+							</li>
+							<!-- 3rd Position  -->
+							<li class="table-row">
+								<div class="col col-1 rank3Position" data-label="Position"></div>
+								<div class="col col-2 rank3Name" data-label="Team Name"></div>
+								<div class="col col-3 rank3Played" data-label="Games Played"></div>
+								<div class="col col-4 rank3Won" data-label="Games Won"></div>
+								<div class="col col-5 rank3Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank3Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank3For" data-label="Goals For"></div>
+								<div class="col col-8 rank3Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank3Points" data-label="Points"></div>
+							</li>
+							<!-- 4th Position  -->
+							<li class="table-row">
+								<div class="col col-1 rank4Position" data-label="Position"></div>
+								<div class="col col-2 rank4Name" data-label="Team Name"></div>
+								<div class="col col-3 rank4Played" data-label="Games Played"></div>
+								<div class="col col-4 rank4Won" data-label="Games Won"></div>
+								<div class="col col-5 rank4Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank4Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank4For" data-label="Goals For"></div>
+								<div class="col col-8 rank4Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank4Points" data-label="Points"></div>
+							</li>
+							<!-- 5th Position  -->
+							<li class="table-row">
+								<div class="col col-1 rank5Position" data-label="Position"></div>
+								<div class="col col-2 rank5Name" data-label="Team Name"></div>
+								<div class="col col-3 rank5Played" data-label="Games Played"></div>
+								<div class="col col-4 rank5Won" data-label="Games Won"></div>
+								<div class="col col-5 rank5Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank5Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank5For" data-label="Goals For"></div>
+								<div class="col col-8 rank5Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank5Points" data-label="Points"></div>
+							</li>
+							<!-- 6th Position  -->
+							<li class="table-row">
+								<div class="col col-1 rank6Position" data-label="Position"></div>
+								<div class="col col-2 rank6Name" data-label="Team Name"></div>
+								<div class="col col-3 rank6Played" data-label="Games Played"></div>
+								<div class="col col-4 rank6Won" data-label="Games Won"></div>
+								<div class="col col-5 rank6Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank6Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank6For" data-label="Goals For"></div>
+								<div class="col col-8 rank6Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank6Points" data-label="Points"></div>
+							</li>
+							<!-- 7th Position  -->
+							<li class="table-row">
+								<div class="col col-1 rank7Position" data-label="Position"></div>
+								<div class="col col-2 rank7Name" data-label="Team Name"></div>
+								<div class="col col-3 rank7Played" data-label="Games Played"></div>
+								<div class="col col-4 rank7Won" data-label="Games Won"></div>
+								<div class="col col-5 rank7Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank7Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank7For" data-label="Goals For"></div>
+								<div class="col col-8 rank7Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank7Points" data-label="Points"></div>
+							</li>
+							<!-- 8th Position  -->
+							<li class="table-row">
+								<div class="col col-1 rank8Position" data-label="Position"></div>
+								<div class="col col-2 rank8Name" data-label="Team Name"></div>
+								<div class="col col-3 rank8Played" data-label="Games Played"></div>
+								<div class="col col-4 rank8Won" data-label="Games Won"></div>
+								<div class="col col-5 rank8Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank8Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank8For" data-label="Goals For"></div>
+								<div class="col col-8 rank8Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank8Points" data-label="Points"></div>
+							</li>
+							<!-- 9th Position  -->
+							<li class="table-row">
+								<div class="col col-1 rank9Position" data-label="Position"></div>
+								<div class="col col-2 rank9Name" data-label="Team Name"></div>
+								<div class="col col-3 rank9Played" data-label="Games Played"></div>
+								<div class="col col-4 rank9Won" data-label="Games Won"></div>
+								<div class="col col-5 rank9Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank9Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank9For" data-label="Goals For"></div>
+								<div class="col col-8 rank9Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank9Points" data-label="Points"></div>
+							</li>
+							<!-- 10th Position  -->
+							<li class="table-row">
+								<div class="col col-1 rank10Position" data-label="Position"></div>
+								<div class="col col-2 rank10Name" data-label="Team Name"></div>
+								<div class="col col-3 rank10Played" data-label="Games Played"></div>
+								<div class="col col-4 rank10Won" data-label="Games Won"></div>
+								<div class="col col-5 rank10Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank10Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank10For" data-label="Goals For"></div>
+								<div class="col col-8 rank10Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank10Points" data-label="Points"></div>
+							</li>
+							<!-- 11th Position  -->
+							<li class="table-row">
+								<div class="col col-1 rank11Position" data-label="Position"></div>
+								<div class="col col-2 rank11Name" data-label="Team Name"></div>
+								<div class="col col-3 rank11Played" data-label="Games Played"></div>
+								<div class="col col-4 rank11Won" data-label="Games Won"></div>
+								<div class="col col-5 rank11Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank11Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank11For" data-label="Goals For"></div>
+								<div class="col col-8 rank11Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank11Points" data-label="Points"></div>
+							</li>
+							<!-- 12th Position  -->
+							<li class="table-row">
+								<div class="col col-1 rank12Position" data-label="Position"></div>
+								<div class="col col-2 rank12Name" data-label="Team Name"></div>
+								<div class="col col-3 rank12Played" data-label="Games Played"></div>
+								<div class="col col-4 rank12Won" data-label="Games Won"></div>
+								<div class="col col-5 rank12Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank12Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank12For" data-label="Goals For"></div>
+								<div class="col col-8 rank12Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank12Points" data-label="Points"></div>
+							</li>
+							<!-- 13th Position  -->
+							<li class="table-row">
+								<div class="col col-1 rank13Position" data-label="Position"></div>
+								<div class="col col-2 rank13Name" data-label="Team Name"></div>
+								<div class="col col-3 rank13Played" data-label="Games Played"></div>
+								<div class="col col-4 rank13Won" data-label="Games Won"></div>
+								<div class="col col-5 rank13Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank13Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank13For" data-label="Goals For"></div>
+								<div class="col col-8 rank13Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank13Points" data-label="Points"></div>
+							</li>
+							<!-- 14th Position  -->
+							<li class="table-row">
+								<div class="col col-1 rank14Position" data-label="Position"></div>
+								<div class="col col-2 rank14Name" data-label="Team Name"></div>
+								<div class="col col-3 rank14Played" data-label="Games Played"></div>
+								<div class="col col-4 rank14Won" data-label="Games Won"></div>
+								<div class="col col-5 rank14Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank14Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank14For" data-label="Goals For"></div>
+								<div class="col col-8 rank14Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank14Points" data-label="Points"></div>
+							</li>
+							<!-- 15th Position  -->
+							<li class="table-row">
+								<div class="col col-1 rank15Position" data-label="Position"></div>
+								<div class="col col-2 rank15Name" data-label="Team Name"></div>
+								<div class="col col-3 rank15Played" data-label="Games Played"></div>
+								<div class="col col-4 rank15Won" data-label="Games Won"></div>
+								<div class="col col-5 rank15Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank15Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank15For" data-label="Goals For"></div>
+								<div class="col col-8 rank15Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank15Points" data-label="Points"></div>
+							</li>
+							<!-- 16th Position  -->
+							<li class="table-row">
+								<div class="col col-1 rank16Position" data-label="Position"></div>
+								<div class="col col-2 rank16Name" data-label="Team Name"></div>
+								<div class="col col-3 rank16Played" data-label="Games Played"></div>
+								<div class="col col-4 rank16Won" data-label="Games Won"></div>
+								<div class="col col-5 rank16Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank16Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank16For" data-label="Goals For"></div>
+								<div class="col col-8 rank16Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank16Points" data-label="Points"></div>
+							</li>
+							<!-- 17th Position  -->
+							<li class="table-row">
+								<div class="col col-1 rank17Position" data-label="Position"></div>
+								<div class="col col-2 rank17Name" data-label="Team Name"></div>
+								<div class="col col-3 rank17Played" data-label="Games Played"></div>
+								<div class="col col-4 rank17Won" data-label="Games Won"></div>
+								<div class="col col-5 rank17Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank17Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank17For" data-label="Goals For"></div>
+								<div class="col col-8 rank17Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank17Points" data-label="Points"></div>
+							</li>
+							<!-- 18th Position  -->
+							<li class="table-row">
+								<div class="col col-1 rank18Position" data-label="Position"></div>
+								<div class="col col-2 rank18Name" data-label="Team Name"></div>
+								<div class="col col-3 rank18Played" data-label="Games Played"></div>
+								<div class="col col-4 rank18Won" data-label="Games Won"></div>
+								<div class="col col-5 rank18Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank18Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank18For" data-label="Goals For"></div>
+								<div class="col col-8 rank18Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank18Points" data-label="Points"></div>
+							</li>
+							<!-- 19th Position  if applicable-->
+							<li class="table-row">
+								<div class="col col-1 rank19Position" data-label="Position"></div>
+								<div class="col col-2 rank19Name" data-label="Team Name"></div>
+								<div class="col col-3 rank19Played" data-label="Games Played"></div>
+								<div class="col col-4 rank19Won" data-label="Games Won"></div>
+								<div class="col col-5 rank19Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank19Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank19For" data-label="Goals For"></div>
+								<div class="col col-8 rank19Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank19Points" data-label="Points"></div>
+							</li>
+							<!-- 20th Position if applicable -->
+							<li class="table-row">
+								<div class="col col-1 rank20Position" data-label="Position"></div>
+								<div class="col col-2 rank20Name" data-label="Team Name"></div>
+								<div class="col col-3 rank20Played" data-label="Games Played"></div>
+								<div class="col col-4 rank20Won" data-label="Games Won"></div>
+								<div class="col col-5 rank20Drew" data-label="Games Drew"></div>
+								<div class="col col-6 rank20Lost" data-label="Games Lost"></div>
+								<div class="col col-7 rank20For" data-label="Goals For"></div>
+								<div class="col col-8 rank20Against" data-label="Goals Against"></div>
+								<div class="col col-9 rank20Points" data-label="Points"></div>
+							</li>
+							
+
+							
+						  </ul>
+				</section>		
+
+			<span>Created by mohamedcodes \\ Powered by <a href ='https://www.football-data.org/'> football-data.org</a></span>
+
+		</section> 
+		
+		
+
+
+
+	<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
